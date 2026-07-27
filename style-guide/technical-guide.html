@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>acre&key — Technical Design Scheme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="technical-guide.css">
+<script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="sd-root">
+
+<!-- NAV -->
+<div class="wrap">
+  <nav class="nav">
+    <div class="nav__logo">acre&amp;key</div>
+    <div class="nav__links"><a href="index.html">Style Guide</a><a href="technical-guide.html" style="color: var(--sd-accent);">Technical Guide</a><a href="preview.html">Brand Board</a></div>
+    <div class="nav__spacer">
+      <a class="sd-btn sd-btn--primary">Book Consultation</a>
+    </div>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="sd-hero">
+  <div class="wrap hero sd-ruled">
+    <span class="sd-kicker">INDEPENDENT HOME BUYER CONCIERGE</span>
+    <h1 class="sd-display" style="margin-top:var(--sd-4); max-width:18ch; margin-inline:auto;">The right decision means asking the <span class="sd-display__accent">right questions.</span></h1>
+    <p class="sd-lead">We represent the interests of home buyers in Bengaluru and help them make confident, informed decisions.</p>
+    <div class="hero__cta">
+      <a class="sd-btn sd-btn--primary sd-btn--lg">Book a Free 30-Minute Call</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="band" style="text-align: center;"><div class="wrap">
+  <span class="sd-kicker" style="display:block; margin-bottom:var(--sd-5)">WHY BUYERS TRUST ACRE&KEY</span>
+  <div class="logos" style="justify-content: center;">
+    <span>62+ Checks</span>
+    <span>₹2–10L* Savings</span>
+    <span>₹0 Advisory Fee</span>
+    <span>100% Independent</span>
+  </div>
+</div></section>
+
+<!-- =============== STYLEGUIDE BANDS =============== -->
+<div class="wrap">
+
+  <div class="band">
+    <span class="sd-kicker band__label">01 · COLOR PALETTE</span>
+    <p class="sd-body" style="margin-bottom:var(--sd-5); max-width:70ch">Our color palette utilizes a 75/20/5 ratio (Ivory/Navy/Brass) to establish a "quiet luxury" aesthetic.</p>
+    
+    <div class="swrow">
+      <div class="sw"><div class="sd-swatch" style="background:var(--sd-deep-navy)"></div><span>deep navy</span></div>
+      <div class="sw"><div class="sd-swatch" style="background:var(--sd-refined-brass)"></div><span>refined brass</span></div>
+      <div class="sw"><div class="sd-swatch" style="background:var(--sd-warm-ivory)"></div><span>warm ivory</span></div>
+      <div class="sw"><div class="sd-swatch" style="background:var(--sd-white); border: 1px solid var(--sd-divider)"></div><span>white</span></div>
+      <div class="sw"><div class="sd-swatch" style="background:var(--sd-charcoal)"></div><span>charcoal</span></div>
+      <div class="sw"><div class="sd-swatch" style="background:var(--sd-slate-gray)"></div><span>slate gray</span></div>
+      <div class="sw"><div class="sd-swatch" style="background:var(--sd-warm-stone)"></div><span>warm stone</span></div>
+      <div class="sw"><div class="sd-swatch" style="background:var(--sd-divider)"></div><span>divider</span></div>
+    </div>
+  </div>
+
+  <div class="band">
+    <span class="sd-kicker band__label">02 · TYPOGRAPHY</span>
+    <div class="typerow"><span class="sd-display" style="font-size: 2.5rem;">Display Heading</span><small>Marcellus 400</small></div>
+    <div class="typerow"><span class="sd-h1">Heading one</span><small>Marcellus 400</small></div>
+    <div class="typerow"><span class="sd-h2">Heading two</span><small>Marcellus 400</small></div>
+    <div class="typerow"><span class="sd-lead">Lead paragraph. We hold the key to your right decision.</span><small>Manrope · lg · slate</small></div>
+    <div class="typerow"><span class="sd-body">Body copy sits in Manrope at 16px with generous 1.6 line height for elegant reading.</span></div>
+    <div class="typerow"><span class="sd-kicker">MONO KICKER</span><small>Manrope · 600 · uppercase · tracking</small></div>
+    <div class="typerow"><span class="sd-display__accent" style="font-size:1.4rem">Accent text.</span><small>Marcellus · italic</small></div>
+  </div>
+
+  <div class="band">
+    <span class="sd-kicker band__label">03 · BUTTONS &amp; ICONS</span>
+    <div class="btnrow">
+      <a class="sd-btn sd-btn--primary">Primary Action</a>
+      <a class="sd-btn sd-btn--ghost">Secondary</a>
+      <a class="sd-btn sd-btn--text">Read more &rsaquo;</a>
+    </div>
+    
+    <div class="icons-grid" style="display: flex; gap: var(--sd-5); margin-top: var(--sd-6); color: var(--sd-deep-navy);">
+        <i data-feather="shield"></i>
+        <i data-feather="search"></i>
+        <i data-feather="file-text"></i>
+        <i data-feather="users"></i>
+        <i data-feather="trending-up"></i>
+        <i data-feather="user"></i>
+        <i data-feather="map-pin"></i>
+        <i data-feather="calendar"></i>
+    </div>
+    <p class="sd-body" style="font-size: 13px; margin-top: 12px;">Line icons • 2px stroke • Navy. Use only when they add clarity.</p>
+  </div>
+
+  <div class="band">
+    <span class="sd-kicker band__label">04 · CARDS & GRIDS</span>
+    <div class="sd-grid-3">
+      <div class="sd-card feat">
+        <div class="feat__icon"><i data-feather="search"></i></div>
+        <h4 class="sd-h4">Shortlist better</h4>
+        <p class="sd-body">Curated options that truly fit your goals.</p>
+      </div>
+      <div class="sd-card feat">
+        <div class="feat__icon"><i data-feather="shield"></i></div>
+        <h4 class="sd-h4">Due diligence</h4>
+        <p class="sd-body">62+ checks to uncover what others miss.</p>
+      </div>
+      <div class="sd-card feat">
+        <div class="feat__icon"><i data-feather="briefcase"></i></div>
+        <h4 class="sd-h4">Negotiate better</h4>
+        <p class="sd-body">We negotiate terms, price & benefits.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="band">
+    <span class="sd-kicker band__label">05 · OUR PROVEN PROCESS</span>
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+      <div class="timeline-step">
+        <div class="step-indicator">
+            <div class="step-num">1</div>
+        </div>
+        <h4 class="sd-h4">Understand You</h4>
+        <p class="sd-body" style="font-size: 13px;">Goals, budget, timeline, preferences.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="step-indicator">
+            <div class="step-num">2</div>
+        </div>
+        <h4 class="sd-h4">Shortlist</h4>
+        <p class="sd-body" style="font-size: 13px;">4-6 best-fit options, not hundreds.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="step-indicator">
+            <div class="step-num">3</div>
+        </div>
+        <h4 class="sd-h4">Evaluate</h4>
+        <p class="sd-body" style="font-size: 13px;">Site visits, quality checks, legal & financial due diligence.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="step-indicator">
+            <div class="step-num">4</div>
+        </div>
+        <h4 class="sd-h4">Negotiate</h4>
+        <p class="sd-body" style="font-size: 13px;">Best price, payment plan, waivers & more.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="step-indicator">
+            <div class="step-num">5</div>
+        </div>
+        <h4 class="sd-h4">Decide</h4>
+        <p class="sd-body" style="font-size: 13px;">You decide. We support every step.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer style="border-top:1px solid var(--sd-divider)"><div class="wrap foot">
+  <div class="foot__cols">
+    <div>
+        <div class="nav__logo" style="margin-bottom:12px">acre&amp;key</div>
+        <p class="sd-body" style="max-width:34ch">Independent Home Buyer Concierge.</p>
+    </div>
+    <div><h5>Guides</h5><a href="index.html">Style Guide</a><a href="technical-guide.html">Technical Guide</a><a href="preview.html">Brand Board</a></div>
+    <div><h5>Company</h5><a>About</a><a>Process</a><a>Pricing</a></div>
+  </div>
+</div></footer>
+
+<script>
+    feather.replace();
+</script>
+</body>
+</html>
