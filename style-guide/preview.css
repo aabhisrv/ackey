@@ -32,11 +32,13 @@ body {
 .board-container {
     max-width: 1600px;
     margin: 0 auto;
-    background-color: var(--warm-ivory); /* The overall board background is slightly warm */
+    background-color: var(--warm-ivory);
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg' opacity='0.9'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     background-blend-mode: soft-light;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 12px 32px -10px rgba(0,0,0,0.15);
     border: 1px solid var(--divider);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 /* Typography Utilities */
@@ -113,7 +115,8 @@ body {
 .swatch {
     height: 40px;
     margin-bottom: 0.5rem;
-    border-radius: 2px;
+    border-radius: 4px;
+    border: 1px solid var(--divider);
 }
 .bg-deep-navy { background: var(--deep-navy); }
 .bg-refined-brass { background: var(--refined-brass); }
@@ -189,7 +192,7 @@ body {
 }
 
 .grid-cell {
-    padding: 2rem;
+    padding: 32px;
     border-right: 1px solid var(--divider);
     border-bottom: 1px solid var(--divider);
     position: relative;
@@ -235,7 +238,7 @@ body {
 
 /* 01 */
 .card-01 { padding: 0; background: var(--warm-ivory); }
-.card-01 .card-content { padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; }
+.card-01 .card-content { padding: 32px; display: flex; flex-direction: column; justify-content: space-between; }
 .mini-logo { font-family: var(--font-logo); font-size: 1.5rem; color: var(--deep-navy); }
 .mini-tagline { font-size: 0.5rem; color: var(--refined-brass); letter-spacing: 0.1em; }
 
@@ -256,7 +259,7 @@ body {
 
 /* 04 */
 .card-04 { padding: 0; background: var(--warm-ivory); }
-.card-04 .card-content { padding: 2rem; }
+.card-04 .card-content { padding: 32px; }
 
 /* 05 */
 .feature-list { list-style: none; }
