@@ -38,14 +38,14 @@ body {
 
 /* Layout */
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
 }
 
 .brand-name {
@@ -65,7 +65,7 @@ body {
 }
 
 .section {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
 }
 
 .section-title {
