@@ -65,9 +65,7 @@
 
 
 .sd-root {
-  background-color: var(--sd-bg-700);
-  background-image: var(--sd-noise);
-  background-blend-mode: soft-light;
+  background-color: var(--sd-white);
   color: var(--sd-fg);
   font-family: var(--sd-font-body);
   font-size: var(--sd-t-body);
@@ -93,39 +91,25 @@
 
 /* SECTION BREAKS */
 .section-dark {
-  background-color: var(--sd-deep-navy);
-  background-image: var(--sd-noise);
-  background-blend-mode: soft-light;
-  color: var(--sd-white);
-  border-bottom: none;
+  background-color: var(--sd-white);
+  color: var(--sd-deep-navy);
+  border-bottom: 1px solid var(--sd-line);
   margin-inline: calc(50% - 50vw);
   width: 100vw;
   padding-inline: calc(50vw - 50% + var(--sd-gutter));
 }
-.section-dark h1, .section-dark h2, .section-dark h3, .section-dark h4, .section-dark p {
-  color: var(--sd-white);
-  transition: color var(--sd-dur) ease;
-}
+.section-dark h1, .section-dark h2, .section-dark h3, .section-dark h4, .section-dark p { color: var(--sd-deep-navy); }
 .section-dark .sd-kicker {
   color: var(--sd-accent) !important;
 }
-.section-dark .sd-card {
-  background-color: rgba(251, 246, 243, 0.05);
-  border-color: rgba(251, 246, 243, 0.15);
-  box-shadow: none;
-}
-.section-dark .sd-card:hover {
-  background-color: rgba(251, 246, 243, 0.08);
-  border-color: rgba(251, 246, 243, 0.3);
-}
+.section-dark .sd-card { background-color: var(--sd-white); border-color: var(--sd-line); box-shadow: none; }
+.section-dark .sd-card:hover { background-color: var(--sd-warm-ivory); border-color: var(--sd-line-strong); }
 .section-dark .sd-card--peek:hover h4, .section-dark .sd-card--peek:hover p {
   color: var(--sd-deep-navy) !important;
 }
 
 .section-stone {
-  background-color: var(--sd-warm-stone);
-  background-image: var(--sd-noise);
-  background-blend-mode: soft-light;
+  background-color: var(--sd-warm-ivory);
   border-bottom-color: var(--sd-line);
   margin-inline: calc(50% - 50vw);
   width: 100vw;
@@ -133,13 +117,15 @@
 }
 
 .section-brass {
-  background-color: var(--sd-accent);
-  background-image: var(--sd-noise);
-  background-blend-mode: soft-light;
-  color: var(--sd-deep-navy);
+  background-color: var(--sd-white);
+  color: var(--sd-accent);
   padding-block: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  border-bottom: none;
+  border-top: 1px solid var(--sd-line);
+  border-bottom: 1px solid var(--sd-line);
   margin-inline: calc(50% - 50vw);
   width: 100vw;
   padding-inline: calc(50vw - 50% + var(--sd-gutter));
@@ -149,7 +135,7 @@
   font-size: var(--sd-t-h2);
   margin: 0;
   letter-spacing: 0.02em;
-  color: var(--sd-deep-navy);
+  color: var(--sd-accent);
 }
 
 /* NAV */
@@ -502,3 +488,4 @@
         display: none !important; /* Hide navigation elements for print */
     }
 }
+
