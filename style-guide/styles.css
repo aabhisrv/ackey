@@ -2,11 +2,11 @@
     --deep-navy: rgba(24, 42, 61, 0.84);
     --refined-brass: #B0915A;
     --warm-ivory: #FBF6F3;
-    --white: #FFFFFF;
-    --charcoal: #222222;
-    --slate-gray: #6B7280;
+    --white: #FDFBF9;
+    --navy-muted: rgba(24, 42, 61, 0.5);
+    
     --warm-stone: #EDE8E2;
-    --divider: #DDD7CF;
+    --divider: rgba(24, 42, 61, 0.08);
     
     --font-heading: 'Marcellus', serif;
     --font-body: 'Manrope', sans-serif;
@@ -30,8 +30,9 @@ body {
     background-color: var(--warm-ivory);
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg' opacity='0.9'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     background-blend-mode: soft-light;
-    color: var(--charcoal);
-    line-height: 1.6;
+    color: var(--deep-navy);
+    line-height: 1.7;
+    letter-spacing: 0.02em;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -84,7 +85,7 @@ body {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--charcoal);
+    color: var(--deep-navy);
     margin-bottom: 1.5rem;
     font-weight: 700;
 }
@@ -121,8 +122,8 @@ body {
 .bg-refined-brass { background-color: var(--refined-brass); }
 .bg-warm-ivory { background-color: var(--warm-ivory); }
 .bg-white { background-color: var(--white); }
-.bg-charcoal { background-color: var(--charcoal); }
-.bg-slate-gray { background-color: var(--slate-gray); }
+.bg-charcoal { background-color: var(--deep-navy); }
+.bg-slate-gray { background-color: var(--navy-muted); }
 .bg-warm-stone { background-color: var(--warm-stone); }
 .bg-divider { background-color: var(--divider); }
 .border-divider { border: 1px solid var(--divider); }
@@ -134,7 +135,7 @@ body {
 }
 
 .color-name { font-weight: 600; }
-.color-hex { color: var(--slate-gray); font-family: monospace; }
+.color-hex { color: var(--navy-muted); font-family: monospace; }
 
 /* Ratio Bar */
 .color-ratio {
@@ -169,7 +170,7 @@ body {
     color: var(--white);
 }
 
-.segment-ivory { background-color: var(--warm-ivory); color: var(--charcoal); border: 1px solid var(--divider); }
+.segment-ivory { background-color: var(--warm-ivory); color: var(--deep-navy); border: 1px solid var(--divider); }
 .segment-navy { background-color: var(--deep-navy); }
 .segment-brass { background-color: var(--refined-brass); }
 
@@ -221,7 +222,7 @@ body {
 
 .icon-note {
     font-size: 0.875rem;
-    color: var(--slate-gray);
+    color: var(--navy-muted);
     margin-top: 1.5rem;
 }
 
@@ -254,7 +255,7 @@ body {
 }
 
 .principle-desc {
-    color: var(--slate-gray);
+    color: var(--navy-muted);
     margin-bottom: 2rem;
     font-size: 0.95rem;
 }
@@ -380,6 +381,39 @@ body {
     font-size: 0.875rem;
 }
 
+/* LUXURY IMAGE OVERLAYS */
+.sd-image-lux {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--sd-r-sm, 4px);
+}
+
+.sd-image-lux img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: sepia(0.15) saturate(0.85) contrast(1.05); /* Warm film look */
+    transition: transform 600ms ease, filter 600ms ease;
+}
+
+/* The Vignette & Warm Wash Overlay */
+.sd-image-lux::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    /* Inner shadow for vignette + a subtle warm ivory wash */
+    box-shadow: inset 0 0 40px rgba(24, 42, 61, 0.15);
+    background: linear-gradient(to bottom, rgba(251, 246, 243, 0) 50%, rgba(24, 42, 61, 0.2) 100%);
+    mix-blend-mode: multiply;
+    z-index: 1;
+}
+
+.sd-image-lux:hover img {
+    transform: scale(1.03);
+    filter: sepia(0) saturate(1) contrast(1); /* Reveal true colors on hover */
+}
+
 /* 70/30 Shadows */
 .shadow-demo {
     position: relative;
@@ -410,7 +444,7 @@ body {
     left: -20px;
     width: 140px;
     height: 140px;
-    background: var(--charcoal);
+    background: var(--deep-navy);
     border-radius: 50%;
     box-shadow: var(--shadow-silhouette);
     z-index: 1;
@@ -445,7 +479,7 @@ body {
 
 .floating-card p {
     font-size: 0.875rem;
-    color: var(--slate-gray);
+    color: var(--navy-muted);
 }
 
 /* Perspective & Orthogonal */

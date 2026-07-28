@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="technical-guide.css">
 <script src="https://unpkg.com/feather-icons"></script>
+<script src="interactions.js"></script>
 </head>
 <body class="sd-root">
 
@@ -30,7 +31,7 @@
     <h1 class="sd-display" style="margin-top:var(--sd-4); max-width:18ch; margin-inline:auto;">The right decision means asking the <span class="sd-display__accent">right questions.</span></h1>
     <p class="sd-lead">We represent the interests of home buyers in Bengaluru and help them make confident, informed decisions.</p>
     <div class="hero__cta">
-      <a class="sd-btn sd-btn--primary sd-btn--lg">Book a Free 30-Minute Call</a>
+      <a class="sd-btn sd-btn--primary sd-btn--lg sd-btn--magnetic">Book a Free 30-Minute Call</a>
     </div>
   </div>
 </section>
@@ -58,8 +59,8 @@
       <div class="sw"><div class="sd-swatch" style="background:var(--sd-refined-brass)"></div><span>refined brass</span></div>
       <div class="sw"><div class="sd-swatch" style="background:var(--sd-warm-ivory)"></div><span>warm ivory</span></div>
       <div class="sw"><div class="sd-swatch" style="background:var(--sd-white); border: 1px solid var(--sd-divider)"></div><span>white</span></div>
-      <div class="sw"><div class="sd-swatch" style="background:var(--sd-charcoal)"></div><span>charcoal</span></div>
-      <div class="sw"><div class="sd-swatch" style="background:var(--sd-slate-gray)"></div><span>slate gray</span></div>
+      <div class="sw"><div class="sd-swatch" style="background:var(--sd-deep-navy)"></div><span>Deep Navy (Solid)</span></div>
+      <div class="sw"><div class="sd-swatch" style="background:var(--sd-navy-muted)"></div><span>Navy Muted</span></div>
       <div class="sw"><div class="sd-swatch" style="background:var(--sd-warm-stone)"></div><span>warm stone</span></div>
       <div class="sw"><div class="sd-swatch" style="background:var(--sd-divider)"></div><span>divider</span></div>
     </div>
@@ -100,17 +101,17 @@
   <div class="band">
     <span class="sd-kicker band__label">04 · CARDS & GRIDS</span>
     <div class="sd-grid-3">
-      <div class="sd-card feat">
+      <div class="sd-card feat stagger-1 sd-card--peek" style="--peek-image: url('assets/modern_staircase.jpg');">
         <div class="feat__icon"><i data-feather="search"></i></div>
         <h4 class="sd-h4">Shortlist better</h4>
         <p class="sd-body">Curated options that truly fit your goals.</p>
       </div>
-      <div class="sd-card feat">
+      <div class="sd-card feat stagger-2 sd-card--peek" style="--peek-image: url('assets/marble_texture.jpg');">
         <div class="feat__icon"><i data-feather="shield"></i></div>
         <h4 class="sd-h4">Due diligence</h4>
         <p class="sd-body">62+ checks to uncover what others miss.</p>
       </div>
-      <div class="sd-card feat">
+      <div class="sd-card feat stagger-3 sd-card--trace">
         <div class="feat__icon"><i data-feather="briefcase"></i></div>
         <h4 class="sd-h4">Negotiate better</h4>
         <p class="sd-body">We negotiate terms, price & benefits.</p>
