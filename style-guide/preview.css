@@ -1,6 +1,6 @@
 :root {
     --deep-navy: rgba(24, 42, 61, 0.84);
-    --refined-brass: #B0915A;
+    --refined-brass: #9A7B4F;
     --warm-ivory: #FBF6F3;
     --white: #FDFBF9;
     --navy-muted: rgba(24, 42, 61, 0.5);
@@ -251,12 +251,13 @@ body {
 .question-list li {
     display: flex;
     align-items: center;
+    gap: 1.5rem;
     padding: 1rem 0;
     border-bottom: 1px solid var(--divider);
     font-size: 0.85rem;
 }
 .question-list li:last-child { border-bottom: none; }
-.question-list i { width: 18px; height: 18px; margin-right: 1rem; color: var(--deep-navy); stroke-width: 1.5;}
+.question-list i, .question-list svg { width: 20px; height: 20px; color: var(--deep-navy); stroke-width: 1.5; flex-shrink: 0; }
 
 /* 04 */
 .card-04 { padding: 0; background: var(--warm-ivory); }
