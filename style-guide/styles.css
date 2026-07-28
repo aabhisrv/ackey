@@ -632,3 +632,37 @@ body {
         display: none !important;
     }
 }
+
+/* PRINT OPTIMIZATION (Save Ink & Ensure Legibility) */
+@media print {
+    *, *::before, *::after {
+        background-color: transparent !important;
+        background-image: none !important;
+        color: #000000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    body, .sd-root {
+        background: #FFFFFF !important;
+    }
+
+    .section-dark, .section-brass, .section-stone, .band, .foot, .sd-hero {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+        border-bottom: 1px solid #CCCCCC !important;
+    }
+
+    h1, h2, h3, h4, p, a, .sd-kicker, .sd-h1, .sd-h2, .sd-h3, .sd-h4, .sd-body {
+        color: #000000 !important;
+    }
+
+    .sd-card, .card-04 {
+        border: 1px solid #CCCCCC !important;
+        page-break-inside: avoid;
+    }
+    
+    .nav__spacer, .nav__toggle, .nav, footer, .foot {
+        display: none !important; /* Hide navigation elements for print */
+    }
+}
