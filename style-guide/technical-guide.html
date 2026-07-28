@@ -17,7 +17,7 @@
 <div class="wrap">
   <nav class="nav">
     <div class="nav__logo">acre&amp;key</div>
-    <div class="nav__links"><a href="index.html">Style Guide</a><a href="technical-guide.html" style="color: var(--sd-accent);">Technical Guide</a><a href="preview.html">Brand Board</a></div>
+    <button class="nav__toggle" id="mobile-menu-btn" aria-label="Toggle menu"><i data-feather="menu"></i></button>`r`n      <div class="nav__links" id="mobile-menu-links"><a href="index.html">Style Guide</a><a href="technical-guide.html" style="color: var(--sd-accent);">Technical Guide</a><a href="preview.html">Brand Board</a></div>
     <div class="nav__spacer">
       <a class="sd-btn sd-btn--primary">Book Consultation</a>
     </div>
@@ -183,5 +183,18 @@
 <script>
     feather.replace();
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('mobile-menu-btn');
+    var links = document.getElementById('mobile-menu-links');
+    if(btn && links) {
+      btn.addEventListener('click', function() {
+        links.classList.toggle('is-active');
+      });
+    }
+  });
+</script>
 </body>
 </html>
+
+

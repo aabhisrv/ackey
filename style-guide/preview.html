@@ -282,5 +282,18 @@
     <script>
         feather.replace();
     </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('mobile-menu-btn');
+    var links = document.getElementById('mobile-menu-links');
+    if(btn && links) {
+      btn.addEventListener('click', function() {
+        links.classList.toggle('is-active');
+      });
+    }
+  });
+</script>
 </body>
 </html>
+
+
